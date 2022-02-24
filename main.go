@@ -49,6 +49,6 @@ func main() {
 	err := http.ListenAndServe(":3000", nil)
 
 	if err != nil {
-		log.Fatal("Erro ao subir servidor Web")
+		log.Fatal("Erro ao subir servidor Web. " + err.Error())
 	}
 }
